@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    display: flex;
+}
+
+.container .col-left {
+    width: 50%;
+    max-width: 50%;
+}
+
+.container .col-right {
+    width: 50%;
+    max-width: 50%;
+}
+
+.table-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.table-wrapper table {
+    margin: 20px 20px;
+    min-width: 400px;
+}
+
+table td {
+    text-align: center;
+}
+
+.col-left table {
+    border-spacing: 0;
+}
+
+.col-left table tr {
+    margin: 3px;
+    cursor: pointer;
+}
+
+.col-left table tbody tr:hover {
+    background-color: #E0E0E0;
+}
+
+.textDirectionRTL a, 
+.textDirectionRTL select,
+.textDirectionRTL th,
+.textDirectionRTL span,
+.textDirectionRTL p
+{
+    direction: rtl !important;
+    unicode-bidi: bidi-override !important;
+    transform: rotateY(180deg) !important;
+}

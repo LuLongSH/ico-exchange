@@ -1,0 +1,10 @@
+.textDirectionRTL a, 
+.textDirectionRTL select,
+.textDirectionRTL th,
+.textDirectionRTL span,
+.textDirectionRTL p
+{
+    direction: rtl !important;
+    unicode-bidi: bidi-override !important;
+    transform: rotateY(180deg) !important;
+}

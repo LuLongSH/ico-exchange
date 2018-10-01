@@ -1,0 +1,23 @@
+<div class="container" [ngClass]="{textDirectionRTL: language === 'AR'}">
+  <div class="fom-container">
+    <form [formGroup]="formRegister" action="">
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" name="email" formControlName="email" />
+        <div *ngIf="formRegister.controls['email'].errors && formRegister.controls['email'].touched" class="alert">
+          Wrong email!
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" type="password" name="password" formControlName="password"/>
+        <div *ngIf="formRegister.controls['password'].invalid && formRegister.controls['password'].touched" class="alert">
+          Please enter password
+        </div>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-default" (click)="send()" [disabled]="formRegister.invalid">Register</button>
+      </div>
+    </form>
+  </div>
+</div>

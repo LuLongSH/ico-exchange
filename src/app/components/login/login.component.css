@@ -1,0 +1,52 @@
+.container {
+    width: 360px;
+    height: 320px;
+    margin: 25px auto;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px auto;
+}
+
+.form-group label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-group .alert {
+    display: block;
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+.form-group .btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    outline-style: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.textDirectionRTL a,
+.textDirectionRTL select,
+.textDirectionRTL th,
+.textDirectionRTL span,
+.textDirectionRTL p
+{
+    direction: rtl !important;
+    unicode-bidi: bidi-override !important;
+    transform: rotateY(180deg) !important;
+}

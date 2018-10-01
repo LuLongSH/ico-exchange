@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.container .header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header .logo {
+    width: 20%;
+    max-width: 20%;
+}
+
+.header .menu {
+    width: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu a {
+    margin: 10px;
+}
+
+.header .account {
+    width: 20%;
+    max-width: 20%;
+}
+
+.header .account a {
+    margin: 0 10px;
+}
+
+.textDirectionRTL a,
+.textDirectionRTL select,
+.textDirectionRTL th,
+.textDirectionRTL span,
+.textDirectionRTL p
+{
+    direction: rtl !important;
+    unicode-bidi: bidi-override !important;
+    transform: rotateY(180deg) !important;
+}
+
+
+
+.text-direction-ltr {
+    direction: ltr !important;
+}

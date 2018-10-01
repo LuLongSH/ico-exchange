@@ -1,0 +1,35 @@
+<div class="container" [ngClass]="{textDirectionRTL: textStyleRTL}">
+  <div class="header">
+    <div class="logo">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active">Logo</a>
+    </div>
+    <div class="menu">
+      <a [routerLink]="['/transactions']" routerLinkActive="router-link-active">transactions</a>
+      <a [routerLink]="['/support']" routerLinkActive="router-link-active">support</a>
+      <select name="" id="" (change)="onChange($event.target.value)">
+        <option value="EN">EN</option>
+        <option value="UA">UA</option>
+        <option value="IN">IN</option>
+        <option value="AR">AR</option>
+        <option value="CH">CH</option>
+      </select>
+    </div>
+    <div class="account" *ngIf="!isLoggedIn(); else logoutTemp">
+      <a [routerLink]="['/login']" routerLinkActive="router-link-active">sign in</a>
+      <a [routerLink]="['/register']" routerLinkActive="router-link-active">register</a>
+    </div>
+
+    <ng-template #logoutTemp>
+      <a (click)="onLogout()" [routerLink]="['']">logout</a>
+    </ng-template>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <div class="footer">
+    <span>CURRENT LANGUAGE IS {{selectedLanguage}}</span>
+  </div>
+
+  <app-notification-modal *ngIf="isLoggedIn()"></app-notification-modal>
+</div>
+

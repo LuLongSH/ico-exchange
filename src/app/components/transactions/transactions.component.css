@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container .table-wrapper {
+    width: 400px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.table-wrapper table {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+    text-align: center;
+}
+
+.textDirectionRTL a,
+.textDirectionRTL select,
+.textDirectionRTL th,
+.textDirectionRTL span,
+.textDirectionRTL p
+{
+    direction: rtl !important;
+    unicode-bidi: bidi-override !important;
+    transform: rotateY(180deg) !important;
+}
+
+.update {
+  transition: background 2s ease;
+  background: blue;
+}
